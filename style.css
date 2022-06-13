@@ -1,0 +1,335 @@
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ body{
+    font-family: 'Poppins', sans-serif;
+ }
+ .header{
+     width: 100%;
+     min-height: 100vh;
+     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/img/banner.png);
+     background-position: center;
+     background-size: cover;
+     position: relative;
+     
+ }
+ .top{
+     padding: 2% 6%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     
+ }
+ .logo img{
+     width: 160px;
+ }
+.nav-bar{
+    flex: 1;
+    text-align: right;
+}
+.nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-bar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-bar ul li:hover::after{
+    width: 100%;
+
+
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+}
+.btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+
+
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-bar ul li{
+        display: block;
+    }
+    .nav-bar{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-bar ul{
+        padding: 30px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .col3 img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    .online{
+        font-size: 22px;
+    }
+}
+/* courses*/
+.course{
+    
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+.courses h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: black;
+    font-size: 15px;
+    font-weight: 420;
+    line-height: 1.7;
+    padding: 10px;
+    
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+.col{
+    flex-basis: 32%;
+    background-color: #fff3f3;
+    padding: 30px 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin: 0 5px;
+    box-sizing: border-box;
+}
+.col1 img{
+    width: 100%;
+    display: block;
+}
+
+h1{
+    font-size: 19px;
+    font-weight: 600;
+    
+}
+.col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+/*---Global Campus---*/
+.global-campus{
+    width: 80%;
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+
+}
+.global-campus p{
+    font-size: 15px;
+    padding: 20px;
+    color: #777;
+}
+.col1{
+    flex-basis: 32%;
+    border-radius: 9px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+
+}
+/*---Facilities style goes here--*/
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.col2{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.col2 img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.col2 p{
+    padding: 0;
+    line-height: 1.7;
+}
+.col2 h3{
+    margin: 16px 0px 15px 0px;
+    text-align: left;
+
+
+}
+/*-----Style of Students section---- */
+.student{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+.col3{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.col3 img{
+    height: 40px;
+    margin: 0px 20px 0px 5px;
+    border-radius: 50%;
+}
+.col3 p{
+    padding: 0;
+    
+}
+.col3 h3{
+    margin: 40px 0px 10px 0px;
+    text-align: left;
+    
+}
+.col3 .fa{
+    color: #f44336;
+}
+.online{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/img/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.online h3{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.footer{
+    height: 200px;
+    background: linear-gradient(#032C4B, #8b3f3f);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    
+    
+}
+.footer h2{
+    padding-top: 40px;
+}
+.footer p{
+    
+    color: #fff;
+}
+.line{
+    border: 2px solid rgb(199, 204, 204);
+    margin: auto;
+    width: 800px;
+}
+
+.media .fa-brands{
+    padding-left: 20px;
+}
